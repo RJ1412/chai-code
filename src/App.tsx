@@ -1,0 +1,41 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { Whyus } from './components/whyussection'
+import { TwitterCard } from './components/twittercard'
+import { Cohort } from './components/cohorts'
+import { Udemy } from './components/udemy'
+import { CohortBenefits } from "./components/cohort_benifits"
+import { WhyChaiCode } from './components/whychaicode'
+import { Topics } from './components/topics'
+import { Discord } from './components/discord'
+import { Footer } from './components/footer'
+import { FreeAPISection } from './components/freeapi'
+import { TestimonialsSection } from './components/testimonial'
+import { AppFeaturesSection } from './components/AppFeatures'
+ function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div className='max-h-[700vh]'>
+        <Whyus/>
+        <TwitterCard></TwitterCard>
+        <Cohort></Cohort>
+        <TestimonialsSection></TestimonialsSection>
+        <Udemy></Udemy>
+        <CohortBenefits></CohortBenefits>
+        <WhyChaiCode></WhyChaiCode>
+        <Topics></Topics>
+        <Discord></Discord>
+        <AppFeaturesSection></AppFeaturesSection>
+        <FreeAPISection></FreeAPISection>
+        <Footer></Footer>
+      </div>
+     
+    </>
+  )
+}
+
+export default App
