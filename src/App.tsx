@@ -14,12 +14,12 @@ import { Footer } from './components/footer'
 import { FreeAPISection } from './components/freeapi'
 import { TestimonialsSection } from './components/testimonial'
 import { AppFeaturesSection } from './components/AppFeatures'
+
  function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='max-h-[700vh]'>
+     <div className='bg-background text-foreground min-h-screen'>
         <Whyus/>
         <TwitterCard></TwitterCard>
         <Cohort></Cohort>
@@ -32,8 +32,7 @@ import { AppFeaturesSection } from './components/AppFeatures'
         <AppFeaturesSection></AppFeaturesSection>
         <FreeAPISection></FreeAPISection>
         <Footer></Footer>
-      </div>
-     
+        </div>
     </>
   )
 }

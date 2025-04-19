@@ -2,7 +2,8 @@ import ReactPlayer from 'react-player'
 import { CiCalendar } from "react-icons/ci";
 import { MdOutlineTimer } from "react-icons/md";
 import { Button } from './ui/button';
-
+import { UseElementVisibility } from '@/hooks/use-element-visibility'
+import { motion } from 'motion/react'
 const Live =  () => {
     return (
         <>
@@ -34,13 +35,32 @@ const Price = ({currentPrice, originalPrice} : PriceDisplayProps) => {
 }
 
 export const Cohort = () => {
+    const [isVisible1, setIsVisible1] = UseElementVisibility()
+    const [isVisible2, setIsVisible2] = UseElementVisibility()
     return (
   <>
-<div className="mt-20 ml-60">
+ 
+<motion.div
+  ref={isVisible1}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={setIsVisible1 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+  transition={{
+    duration: 2,
+    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+  }}
+className="mt-20 ml-60">
   <p className="text-7xl font-md mb-5">Cohorts</p>
   <p className="text-3xl font-md mt-5">Live Training Classes</p>
-</div>
-<div className="grid grid-cols-3 gap-30 ml-25 mt-6 mb-5 ">
+</motion.div>
+<motion.div 
+  ref={isVisible2}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={setIsVisible2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+  transition={{
+    duration: 2,
+    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+  }}
+className="grid grid-cols-3 gap-30 ml-25 mt-6 mb-5 ">
     <div className="col-span-1 border-1 flex flex-col h-150 border-black rounded-lg w-[400px] text-white bg-black">
       <Live></Live>
         <ReactPlayer width={399} height={300} controls={true} playing={true} light={true} url='https://youtu.be/Kjd-SWpe1do' />
@@ -94,7 +114,7 @@ export const Cohort = () => {
         <Button className=' mb-1 mx-1 bg-gradient-to-r from bg-orange-500 to bg-amber-600 hover:bg-amber-700 hover:cursor-pointer'>Learn More</Button>
     </div>
 
-</div>
+</motion.div>
 
    </>
     )

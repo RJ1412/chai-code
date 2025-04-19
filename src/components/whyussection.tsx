@@ -3,8 +3,8 @@ import ReactPlayer from 'react-player'
 import { motion } from 'motion/react'
 import { useState , useRef, useEffect} from 'react'
 import { UseElementVisibility } from '@/hooks/use-element-visibility'
-
-
+import { ModeToggle } from './mode-toggle'
+import logo from './images/chai-gray.png'
 
 export const Whyus = () => {
     const [ball1, isball1Visible] = UseElementVisibility()
@@ -19,30 +19,37 @@ export const Whyus = () => {
         <div 
         className="flex flex-col justify-center h-[vh] ">
   <div className=''>
-    <header className=" fixed w-fit bg-white h-23 z-5 ">
-      <div className=" px-6 flex  justify-around pb-2">
-        <div className="text-3xl text-gray-800 mr-100 pt-4">
+    <header className=" fixed w-fit  h-23 z-5 bg-white dark:bg-background text-black dark:text-white">
+      <div className=" px-6 flex justify-around pb-2">
+        <div className='h-8 w-15'>
+          <img src={logo} className='mt-5 h-[50px] w-[50px]' alt="" />
+        </div>
+        <div className="text-3xl mr-100 pt-4 mr-20">
           ChaiCode
         </div>
-        <div className="flex flex-row items-center gap-20 pt-2 pr-5 text-lg font-semibold ">
-          <div className="relative inline-flex items-center font-semibold text-gray-600 hover:text-gray-900 hover:cursor-pointer">
+        <div className="flex flex-row items-center gap-20 pt-2 pr-5 text-lg font-semibold mr-10 ">
+          <div className="relative inline-flex items-center font-semibold  hover:text-gray-900 hover:cursor-pointer">
             Cohorts
             {/* Red dot next to Cohorts */}
             <span className="ml-1 inline-block w-2 h-2 rounded-full bg-red-500 mt-1"></span>
           </div>
-          <div className="text-gray-600 hover:text-gray-900 hover:cursor-pointer">
+          <div className=" hover:text-gray-900 hover:cursor-pointer">
             Udemy
           </div>
-          <div  className="text-gray-600 hover:text-gray-900 hover:cursor-pointer">
+          <div  className=" hover:text-gray-900 hover:cursor-pointer">
             Docs
           </div>
-          <div  className="text-gray-600 hover:text-gray-900 hover:cursor-pointer">
+          <div  className=" hover:text-gray-900 hover:cursor-pointer">
             Reviews
           </div>
         </div>
-
+      
+      
+        <div  className=" hover:text-gray-900 hover:cursor-pointer mt-8 ml-50 pr-4">
+            <ModeToggle></ModeToggle>
+          </div>
         
-        <div className=''>
+        <div className='pl-4'>
           <motion.button
           whileHover={{
             // scale : 1.1
@@ -50,10 +57,11 @@ export const Whyus = () => {
             whileTap={{
               scale : [0.90,1.1]
             }} 
-           className=" rounded-lg bg-gradient-to-r from bg-amber-500 to bg-orange-400 hover:cursor-pointer ml-80 mt-8">
+           className=" rounded-lg bg-gradient-to-r from bg-amber-500 to bg-orange-400 hover:cursor-pointer mt-8 pr-4">
             Login
           </motion.button>
         </div>
+   
       </div>
       <motion.span 
       ref = {border}
@@ -64,11 +72,10 @@ export const Whyus = () => {
         isborderVisible ? { width: "100%" } : { width: 0 }
       }
       transition={{ duration: 1, ease: "easeOut" }}
-      className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from bg-amber-500 to bg-yellow-400"></motion.span>
+      className="absolute bottom-0 left-0 h-1 w-full ml-0 bg-gradient-to-r from bg-amber-500 to bg-yellow-400"></motion.span>
     </header>
     </div>
  
-
      <motion.div
       ref={ball1}
       initial={{ opacity: 0, scale: 0 }}
@@ -126,7 +133,7 @@ export const Whyus = () => {
       <div className="flex items-center gap-2">
   <span className="relative flex h-3 w-3">
     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-75"></span>
-    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
   </span>
 </div>
 
@@ -153,13 +160,11 @@ export const Whyus = () => {
    duration: 1,
    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
  }}
- 
 >
   <div className='ml-56 mt-20'>
     <p className='text-2xl'>Love that we get from our community</p>
     <p className='text-4xl mt-3 font-medium'>Tweet Love</p>
   </div>
-
 </motion.div>
     </div>
         </>
