@@ -6,7 +6,7 @@ export const Discord = () => {
   const [ref, isVisible] = UseElementVisibility();
 
   return (
-    <div className=" py-24 px-4 md:px-10 mt-30 ml-60 relative">
+    <div className=" py-24 px-4 md:px-10 mt-30 ml-90 relative">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

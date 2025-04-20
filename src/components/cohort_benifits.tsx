@@ -49,7 +49,7 @@ export const CohortBenefits = () => {
     >
         
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-2 mt-20 ml-60">Key Benefits of Cohorts</h1>
+        <h1 className="text-4xl font-bold mb-2 mt-20 ml-90">Key Benefits of Cohorts</h1>
         <p className="text-sm ml-65">
           Cohorts are best way to learn because you finish the course in a timely manner
         </p>

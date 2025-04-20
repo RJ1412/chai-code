@@ -15,7 +15,7 @@ const features = [
 
 export const AppFeaturesSection = () => {
   return (
-    <section className="bg-white dark:bg-black text-black dark:text-white py-20 px-6 md:px-16 ml-60 mt-20">
+    <section className="bg-white dark:bg-black text-black dark:text-white py-20 px-6 md:px-16 ml-90 mt-20">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -35,7 +35,7 @@ export const Topics = () => {
         }}
       >
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2 mt-20 ml-60">Topics Cloud</h1>
+          <h1 className="text-4xl font-bold mb-2 mt-20 ml-90">Topics Cloud</h1>
           <p className="text-sm text-gray-700 ml-65">
             You can find videos and courses on topics and much more
           </p>

@@ -37,7 +37,7 @@ const resolvedTheme = theme === "system" ? (systemPrefersDark ? "dark" : "light"
   ];
 
   return (
-    <footer className="border-t pt-20 pb-12 mt-20 ml-40">
+    <footer className="border-t pt-20 pb-12 mt-20 ml-60">
   <div className="max-w-7xl mx-auto px-6">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
      

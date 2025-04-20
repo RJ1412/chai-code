@@ -49,7 +49,7 @@ export const WhyChaiCode = () => {
         }}
       >
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2 mt-20 ml-60">But Why ChaiCode ?</h1>
+          <h1 className="text-4xl font-bold mb-2 mt-20 ml-90">But Why ChaiCode ?</h1>
           <p className="text-sm text-gray-700 ml-65">
             ChaiCode exists because we love tech and teaching
           </p>

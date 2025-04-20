@@ -36,7 +36,7 @@ export const TestimonialsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-4xl md:text-5xl font-bold text-center mb-4 ml-60"
+        className="text-4xl md:text-5xl font-bold text-center mb-4 ml-70"
       >
         Our Students Feedback
       </motion.h2>
@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-center max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300 mb-12 ml-85"
+        className="text-center max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300 mb-12 ml-90"
       >
         Explore the incredible advantages of enrolling in our courses and enhancing your skills.
       </motion.p>
