@@ -42,7 +42,7 @@ export const Topics = () => {
         </div>
 
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10 ml-50 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10 ml-70 max-w-6xl mx-auto">
           {topics.map((topic, index) => (
             <a
               key={index}
