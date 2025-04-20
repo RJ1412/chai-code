@@ -51,7 +51,7 @@ export const CohortBenefits = () => {
         
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-2 mt-20 ml-60">Key Benefits of Cohorts</h1>
-        <p className="text-sm text-gray-700 ml-65">
+        <p className="text-sm ml-65">
           Cohorts are best way to learn because you finish the course in a timely manner
         </p>
       </div>
@@ -60,21 +60,21 @@ export const CohortBenefits = () => {
         {benefits.map((benefit, index) => (
           <div
             key={index}
-            className="rounded-2xl border border-gray-200 p-6 hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 bg-white cursor-pointer"
+            className="rounded-2xl border border-gray-200 p-6 hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer"
           >
             <h3 className="text-lg font-semibold text-orange-500">
               {benefit.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-2">{benefit.description}</p>
+            <p className="text-sm  mt-2">{benefit.description}</p>
           </div>
         ))}
 
-        <div className="md:col-span-3 border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-start hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 bg-white cursor-pointer">
+        <div className="md:col-span-3 border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-start hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300  cursor-pointer">
           <div className="md:w-full">
             <h3 className="text-xl font-semibold text-orange-500">
               Alumni Network and job listings
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm  mt-2">
               The alumni Network that you always wished for in your college. We have a dedicated platform where students get to know each other, do projects, make agencies and join Hackathons. Our HR team also post regular job updates that you can apply directly whenever you are ready
             </p>
           </div>

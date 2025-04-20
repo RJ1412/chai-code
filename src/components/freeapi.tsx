@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const FreeAPISection = () => {
   return (
-    <section className="bg-white text-black py-16 px-6 md:px-16 mt-10 ml-60">
+    <section className=" py-16 px-6 md:px-16 mt-10 ml-60">
       
       {/* Top Heading */}
       <motion.div

@@ -25,7 +25,7 @@ export const TwitterCard = () => {
      scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
    }}
    
-   className='ml-28 mt-4 dark border rounded-lg w-320 h-80 overflow-x-auto overflow-y-auto'>
+   className='ml-28 mt-4 rounded-lg w-320 h-80 overflow-x-auto overflow-y-auto'>
    <Carousel className='ml-12 mr-12'>
 
   <CarouselContent className=''>

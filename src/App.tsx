@@ -19,7 +19,7 @@ import { AppFeaturesSection } from './components/AppFeatures'
 
   return (
     <>
-     <div className='bg-background text-foreground min-h-screen'>
+     <div className=' max-w-fit bg-white dark:bg-black text-black dark:text-white '>
         <Whyus/>
         <TwitterCard></TwitterCard>
         <Cohort></Cohort>

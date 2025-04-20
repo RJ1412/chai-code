@@ -61,25 +61,25 @@ export const WhyChaiCode = () => {
             {benefits.slice(0, 3).map((benefit, index) => (
               <div
                 key={index}
-                className="rounded-xl border border-yellow-400 p-6 bg-white shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer"
+                className="rounded-xl border border-yellow-400 p-6  shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer"
               >
                 <h3 className="text-lg font-bold text-orange-500 mb-2 mt-2">
                   {benefit.title}
                 </h3>
-                <p className="text-sm text-gray-700">{benefit.description}</p>
+                <p className="text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
 
-          <div className="col-span-2 flex flex-col items-center text-center rounded-xl border border-yellow-400 p-6 bg-white shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer">
+          <div className="col-span-2 flex flex-col items-center text-center rounded-xl border border-yellow-400 p-6  shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer">
             <img
               src= {image1} />
             <h3 className="text-lg font-bold text-orange-500 mb-2">Hitesh Choudhary</h3>
-            <p className="text-sm text-gray-700 mt-2">
+            <p className="text-smmt-2">
               Retired from corporate and full-time YouTuber, ex-founder of LCO (acquired), ex-CTO, Sr. Director at PW. 2 YT channels (950k & 470k), stepped into 43 countries.
             </p>
             <h4 className="text-md font-bold text-orange-500 mt-4">Approach</h4>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm -700">
               Project-based courses with peer learning and bounties with many activities.
             </p>
           </div>
@@ -88,12 +88,12 @@ export const WhyChaiCode = () => {
             {benefits.slice(3).map((benefit, index) => (
               <div
                 key={index + 3}
-                className="rounded-xl border border-yellow-400 p-6 bg-white shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer"
+                className="rounded-xl border border-yellow-400 p-6  shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer"
               >
                 <h3 className="text-lg font-bold text-orange-500 mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-sm text-gray-700">{benefit.description}</p>
+                <p className="text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>

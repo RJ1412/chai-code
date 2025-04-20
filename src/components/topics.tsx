@@ -50,7 +50,7 @@ export const Topics = () => {
               href={topic.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-yellow-400 p-6 bg-white shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer text-orange-500 font-semibold flex items-center justify-center text-center"
+              className="rounded-xl border border-yellow-400 p-6  shadow hover:shadow-2xl hover:scale-[1.03] hover:border-orange-300 transition-all duration-300 cursor-pointer text-orange-500 font-semibold flex items-center justify-center text-center"
             >
               {topic.name}
             </a>

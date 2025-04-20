@@ -4,9 +4,15 @@ import { motion } from 'motion/react'
 import { useState , useRef, useEffect} from 'react'
 import { UseElementVisibility } from '@/hooks/use-element-visibility'
 import { ModeToggle } from './mode-toggle'
-import logo from './images/chai-gray.png'
-
+import logo_white from "../chai-assets/chaicode-white.png"
+import logo from "../chai-assets/chaicode-black.png";
+import { useTheme } from "./theme-provider";
 export const Whyus = () => {
+    const { theme } = useTheme();
+  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const resolvedTheme = theme === "system" ? (systemPrefersDark ? "dark" : "light") : theme;
+  
+  
     const [ball1, isball1Visible] = UseElementVisibility()
     const [ball2, isball2Visible] = UseElementVisibility()
     const [ball3, isball3Visible] = UseElementVisibility()
@@ -15,17 +21,23 @@ export const Whyus = () => {
     const [ball6, isball6Visible] = UseElementVisibility()
     const [border, isborderVisible] = UseElementVisibility()
     return (
+
+
         <>
         <div 
-        className="flex flex-col justify-center h-[vh] ">
+        className="flex flex-col justify-center h-[vh] wrap-normal bg-white dark:bg-black text-black dark:text-white">
   <div className=''>
-    <header className=" fixed w-fit  h-23 z-5 bg-white dark:bg-background text-black dark:text-white">
+    <header className=" fixed w-fit  h-23 z-5 bg-white dark:bg-black text-black dark:text-white">
       <div className=" px-6 flex justify-around pb-2">
-        <div className='h-8 w-15'>
+        {/* <div className='h-8 w-15'>
           <img src={logo} className='mt-5 h-[50px] w-[50px]' alt="" />
-        </div>
-        <div className="text-3xl mr-100 pt-4 mr-20">
-          ChaiCode
+        </div> */}
+        <div className="text-3xl mr-100 pt-4">
+        <img
+          src={resolvedTheme === "dark" ? logo_white : logo}
+            alt="ChaiCode"
+            
+          />
         </div>
         <div className="flex flex-row items-center gap-20 pt-2 pr-5 text-lg font-semibold mr-10 ">
           <div className="relative inline-flex items-center font-semibold  hover:text-gray-900 hover:cursor-pointer">
@@ -88,37 +100,43 @@ export const Whyus = () => {
      className="w-60 border rounded-md mt-35 ml-155 py-2 px-0 shadow-lg transition-all duration-700 hover:scale-110 ">
        <p>Trusted by 1.5M code learners</p>
      </motion.div>
-   <motion.div 
-    ref={ball2}
-    initial={{ opacity: 0, scale: 0 }}
-    animate={isball2Visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-    transition={{
-      duration: 1,
-      scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-    }}
-    
-   className='flex flex-col justify-center ml-56'>
-   {/* <div className="w-8xl  pl-5 mt-3 "> */}
-      <div className='font-stretch-150% text-7xl'>Consistency and Community </div>
-      <div className='mt-8 font-medium text-3xl '>An unmatched learning experience for coding courses</div>
-    {/* </div> */}
-   </motion.div>
      <motion.div 
-      ref={ball3}
-      initial={{ opacity: 0, scale: 0 }}
-      animate={isball3Visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-      transition={{
-        duration: 1,
-        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-      }}
-      
-     className="mt-8 ml-100 text-xl flex flex-col items-start">
-      <p className="">Content is everywhere, we provide a learning </p>
-       <p> experience that is unmatched. Bounties, peer learning </p>
-       <p> peer code reviews, Virtual hostel, Alumni Network, Doubt sessions,</p>
-        <p> Group projects and so many other activities to keep you on track. </p> 
-     
-     </motion.div>
+  ref={ball2}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={isball2Visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+  transition={{
+    duration: 1,
+    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+  }}
+  className="mt-20 ml-100 px-6 max-w-4xl mx-auto text-center space-y-6"
+>
+  <h2 className="text-5xl font-bold leading-tight">
+    Consistency and Community
+  </h2>
+  <p className="text-2xl font-medium">
+    An unmatched learning experience for coding courses
+  </p>
+</motion.div>
+
+<motion.div 
+  ref={ball3}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={isball3Visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+  transition={{
+    duration: 1,
+    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+  }}
+  className="mt-10 ml-90 px-6 max-w-3xl mx-auto text-lg leading-relaxed text-center"
+>
+  <p>
+    Content is everywhere, but we provide a learning experience that is unmatched.
+    From bounties and peer learning to code reviews and a virtual hostel.
+  </p>
+  <p className="mt-4">
+    Connect with our Alumni Network, join doubt sessions, collaborate on group projects,
+    and engage in a variety of community-driven activities to stay on track.
+  </p>
+</motion.div>
 
   <motion.div 
    ref={ball4}

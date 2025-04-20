@@ -61,7 +61,7 @@ className="mt-20 ml-60">
     scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
   }}
 className="grid grid-cols-3 gap-30 ml-25 mt-6 mb-5 ">
-    <div className="col-span-1 border-1 flex flex-col h-150 border-black rounded-lg w-[400px] text-white bg-black">
+    <div className="ml-10 col-span-1 border-1 flex flex-col h-150 border-black rounded-lg w-[400px] text-white bg-black">
       <Live></Live>
         <ReactPlayer width={399} height={300} controls={true} playing={true} light={true} url='https://youtu.be/Kjd-SWpe1do' />
         <div className='pl-1'>
@@ -79,7 +79,7 @@ className="grid grid-cols-3 gap-30 ml-25 mt-6 mb-5 ">
         <Button className=' mb-1 mx-1 bg-gradient-to-r from bg-orange-500 to bg-amber-600 hover:bg-amber-700 hover:cursor-pointer'>Learn More</Button>
         
     </div>
-    <div className="col-span-1 border-1 flex flex-col border-black rounded-lg w-[400px] text-white bg-black">
+    <div className="ml-10 col-span-1 border-1 flex flex-col border-black rounded-lg w-[400px] text-white bg-black">
         <Live></Live>
         <ReactPlayer width={399} height={300} controls={true} playing={true} light={true} url='https://youtu.be/VNb_LawBBWU' />
         <div className='pl-1'>
@@ -96,7 +96,7 @@ className="grid grid-cols-3 gap-30 ml-25 mt-6 mb-5 ">
         <div className='text-xs text-start ml-1 mb-3 text-orange-400'>Save 38%</div>
         <Button className=' mb-1 mx-1 bg-gradient-to-r from bg-orange-500 to bg-amber-600 hover:bg-amber-700 hover:cursor-pointer'>Learn More</Button>
     </div>
-    <div className="col-span-1 border-1 flex flex-col border-black rounded-lg w-[400px] text-white bg-black">
+    <div className=" ml-10 col-span-1 border-1 flex flex-col border-black rounded-lg w-[400px] text-white bg-black">
         <Live></Live>
         <ReactPlayer width={399} height={300} controls={true} playing={true} light={true} url='https://youtu.be/oBLpqSHc3lA' />
         <div className='pl-1'>
