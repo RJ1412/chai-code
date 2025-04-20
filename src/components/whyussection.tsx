@@ -1,7 +1,5 @@
-import React from 'react'
 import ReactPlayer from 'react-player'
 import { motion } from 'motion/react'
-import { useState , useRef, useEffect} from 'react'
 import { UseElementVisibility } from '@/hooks/use-element-visibility'
 import { ModeToggle } from './mode-toggle'
 import logo_white from "../chai-assets/chaicode-white.png"

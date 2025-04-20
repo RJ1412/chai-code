@@ -27,8 +27,6 @@ const StarIcon: React.FC<StarIconProps> = ({ filled = true }) => (
 
 export const Udemy = () => {
   const [ref1, isVisible1] = UseElementVisibility();
-  const [ref2, isVisible2] = UseElementVisibility(); // Currently unused
-
   return (
     <>
 

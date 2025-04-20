@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import discordImage from "./images/hitesh.jpg";
 import { UseElementVisibility } from "@/hooks/use-element-visibility";

@@ -1,4 +1,3 @@
-import React from "react";
 import logo_white from "../chai-assets/chaicode-white.svg"
 import logo from "../chai-assets/chaicode-black.svg";
 import instagram from "./images/instagram.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import { UseElementVisibility } from "@/hooks/use-element-visibility";
 import { motion } from 'motion/react';
 import image1 from './images/hitesh.jpg'

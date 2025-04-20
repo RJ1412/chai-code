@@ -7,7 +7,6 @@ import {
     CarouselPrevious,
   } from "@/components/ui/carousel"
   import { motion } from 'motion/react'
-  import { useState , useRef, useEffect} from 'react'
   import { UseElementVisibility } from '@/hooks/use-element-visibility'
 export const TwitterCard = () => {
 
